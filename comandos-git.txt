@@ -2,3 +2,13 @@ git init - iniciar git en repositorio
 
 git status - conocer el estado actual de mi repositorio git 
 
+git ignore - ignorar carpetas o archivos que no necesitemos que sean subidas
+
+git add . - con este le indicamos a git que guarde todos los archivos nuevos que detecte
+
+git commit -m "mensaje indicativo del cambio" - con este comando confirmamos todos los cambios que hicimos hasta ese momento.
+
+git log - genera un historial completo de los ultimos commits, usuario, fecha y hora de esos cambios
+
+git log --oneline - genera un historial resumido 
+
