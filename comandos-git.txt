@@ -1,0 +1,4 @@
+git init - iniciar git en repositorio
+
+git status - conocer el estado actual de mi repositorio git 
+
