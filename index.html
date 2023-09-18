@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- ICONO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/styles.css">
     <title>iNumbers</title>
 </head>
 <body>
-    <header id="arriba">
-            <a href="index.html">
-            <img src="img/logo.png" alt="iNumbers" class="logo">
-            </a>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">iNumbers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">iAcademy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true">Contactanos</a>
+                  </li>
 
-            <nav>
-                <ul id="lista" style="text-align: center;">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                    
-                    <li>
-                        <a href="pages/academy.html">iAcademy</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/recursos.html">Recursos</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/contactanos.html">Contactanos</a>
-                    </li>   
-                </ul> 
-            </nav>
-        </header>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
     <section class="cuadro">
         <section>
@@ -66,13 +71,59 @@
         
     </section>
 
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/1.jpeg" class="d-block w-100" alt="Albert Einstein">
+              </div>
+              <div class="carousel-item">
+                <img src="img/2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/4.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
     <div class="irArriba">
         <a href="#arriba">Ir arriba</a>
     </div>
     
     <footer>
         <p>© 2023 iNumbers, todos los derechos reservados.</p>
+
+        <div class="redes">
+            <a href="linkedin.com/in/fernando-chavez-902a63218" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/chavezfer" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            
+        </div>
+
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
