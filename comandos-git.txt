@@ -1,4 +1,4 @@
-git init - iniciar git en repositorio
+ git init - iniciar git en repositorio
 
 git status - conocer el estado actual de mi repositorio git 
 
@@ -12,3 +12,6 @@ git log - genera un historial completo de los ultimos commits, usuario, fecha y 
 
 git log --oneline - genera un historial resumido 
 
+git merge nombrerama - fusiona los cambios de una rama dentro de la rama principal.
+
+                        tener en cuenta que para hacer el merge, la rama no debe tener add ni commit -m name 
