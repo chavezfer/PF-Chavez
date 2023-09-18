@@ -21,14 +21,24 @@ section {
 a {text-decoration: none;
 }
 
-.cuadro {background-color: rgb(228, 228, 228);
+.cuadro {
 margin-top: 140px;
 margin-bottom: 140px;
-width: 400px;
+width: 91%;
 height: 400px;
 padding: 60px 50px;
 display: flex;
 align-items: center;
+}
+
+.cuadro section{
+    background-color:rgb(228, 228, 228)
+}
+
+@media (max-width: 480px) {
+    .cuadro {
+        background-color: rebeccapurple;
+    }
 }
 
 .frase {
@@ -106,3 +116,62 @@ footer {
     }
 }
 
+.banner {
+    background-image: url(/img/4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner h2 {
+    background-color: #232323;
+    opacity: .9;
+}
+
+.parrafos {
+    width: 85%;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #232323;
+    color: white; 
+}
+
+.contenedor img {
+    width: 450px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .contenedor-textos {
+    text-align: right;
+}   
+
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer {
+    color: #232323;
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+}
