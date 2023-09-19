@@ -188,3 +188,27 @@ img {
     max-width: 100%;
 }
 
+.curso {
+    background-color: #232323;
+    color: white;
+    width: 300px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curso button {
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;   
+}
+
+.padre-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
