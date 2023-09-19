@@ -35,9 +35,21 @@ align-items: center;
     background-color:rgb(228, 228, 228)
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     .cuadro {
-        background-color: rebeccapurple;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .cuadro  {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cuadro  {
+        height: 80vh;
     }
 }
 
@@ -175,3 +187,4 @@ footer {
 img {
     max-width: 100%;
 }
+
