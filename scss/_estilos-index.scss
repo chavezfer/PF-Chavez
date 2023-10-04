@@ -1,0 +1,84 @@
+.cuadro {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    width: 91%;
+    height: 200px;
+    padding: 60px 50px;
+    display: flex;
+    align-items: center;
+    }
+    
+.cuadro section{
+        background-color: $color-secundario
+}
+
+
+.cajaGris{
+    margin-top: 200px;
+    width: 280px;
+}
+
+.imagen {
+    text-align: cen;
+    margin-left: 450px;
+    margin-top: 10px;
+    width: 350px;
+}
+
+@media (max-width: 520px) {
+    .cuadro {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .cuadro  {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cuadro  {
+        height: 80vh;
+    }
+}
+
+.carousel-item img {
+    height: 45vh;
+}
+
+@media (min-width: 520px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item img {
+        height: 80vh;
+    }
+
+    #carouselExampleIndicators {
+        width: 70%;
+        margin: 0 auto
+    }
+}
+
+.frase {
+    color: $color-secundario;
+    background-color: $color-primario;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: $color-primario;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 50px ;
+}
+
+
+header {
+    background-color: $color-primario;
+    opacity: .9;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    top: 0;
+}
+
+
+footer {
+
+    margin-top: 300px;
+}
+
+.irArriba {
+    margin-top: 100px
+}
+
+
+.nav-link {
+    color: $color-secundario;
+}   
+
+.navbar-brand {
+    color: $color-secundario;
+}
+
+a {text-decoration: none;
+}
+
+#lista li {display: inline;
+    margin-right: 50px;
+}
+
+footer {
+    color: $color-primario;
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+}

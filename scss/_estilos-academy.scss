@@ -1,0 +1,53 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $color-primario;
+    color: $color-secundario; 
+}
+
+.contenedor img {
+    width: 450px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .contenedor-textos {
+    text-align: right;
+}   
+
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.curso {
+    background-color: $color-primario;
+    color: $color-secundario;
+    width: 300px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curso button {
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;   
+}
+
+.padre-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
