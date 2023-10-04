@@ -1,16 +1,19 @@
-body {
-  font-family: "Roboto", sans-serif;
-  margin-left: 20px;
-  color: #232323;
-}
-
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTE PRINCIPAL */
+/* TAMAÑOS FUENTE */
+/* RESOLUCIONES DE PANTALLA */
+/* ESPACIADOS */
+/* MIXINS */
 * {
   margin: 0;
   padding: 0;
 }
 
-section {
-  margin: 50px;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #232323;
+  background-color: #ffffff;
 }
 
 header {
@@ -33,11 +36,11 @@ footer {
 }
 
 .nav-link {
-  color: #cecece;
+  color: #ffffff;
 }
 
 .navbar-brand {
-  color: #cecece;
+  color: #ffffff;
 }
 
 a {
@@ -50,7 +53,8 @@ a {
 }
 
 footer {
-  color: #232323;
+  background-color: #232323;
+  color: #ffffff;
   text-align: center;
   padding: 30px;
 }
@@ -59,18 +63,33 @@ img {
   max-width: 100%;
 }
 
+.vis {
+  background-color: #232323;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .cuadro {
   margin-top: 140px;
   margin-bottom: 140px;
   width: 91%;
-  height: 200px;
+  height: 35px;
   padding: 60px 50px;
   display: flex;
   align-items: center;
 }
 
 .cuadro section {
-  background-color: #cecece;
+  background-color: #ffffff;
 }
 
 .cajaGris {
@@ -95,9 +114,9 @@ img {
     height: 70vh;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .cuadro {
-    height: 80vh;
+    height: 55vh;
   }
 }
 .carousel-item img {
@@ -114,7 +133,7 @@ img {
     height: 70vh;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .carousel-item img {
     height: 80vh;
   }
@@ -124,7 +143,7 @@ img {
   }
 }
 .frase {
-  color: #cecece;
+  color: #ffffff;
   background-color: #232323;
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,6 +153,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .contenedor {
@@ -142,7 +167,7 @@ img {
   align-items: center;
   gap: 20px;
   background-color: #232323;
-  color: #cecece;
+  color: #ffffff;
 }
 
 .contenedor img {
@@ -165,7 +190,7 @@ img {
 
 .curso {
   background-color: #232323;
-  color: #cecece;
+  color: #ffffff;
   width: 300px;
   padding: 30px 20px;
   display: flex;
@@ -189,16 +214,16 @@ img {
 }
 
 .banner {
-  background-image: url(/img/jobs.jpg);
+  background-image: url(/img/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cecece;
+  color: #ffffff;
 }
 
 .banner h2 {

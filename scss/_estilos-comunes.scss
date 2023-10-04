@@ -1,16 +1,12 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    color: $color-primario;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
-section {
-    margin: 50px ;
+body {
+    font-family: $fuente-principal;
+    color: $color-primario;
+    background-color: $color-secundario;
 }
 
 
@@ -52,11 +48,27 @@ a {text-decoration: none;
 }
 
 footer {
-    color: $color-primario;
+    background-color: $color-primario;
+    color: $color-secundario;
     text-align: center;
     padding: 30px;
 }
 
 img {
     max-width: 100%;
+}
+
+.vis {
+    background-color: $color-primario;
+    color: $color-secundario;
+    padding: 10px;
+    text-align: center;    
+    align-items: center;
+    display: flex;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: $espaciado-general * 2;
 }
