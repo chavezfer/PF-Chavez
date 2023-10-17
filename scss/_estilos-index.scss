@@ -2,7 +2,7 @@
     margin-top: 140px;
     margin-bottom: 140px;
     width: 91%;
-    height: 35px;
+    height: 30px;
     padding: 60px 50px;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .imagen {
-    text-align: cen;
+ 
     margin-left: 450px;
     margin-top: 10px;
     width: 350px;
@@ -39,36 +39,10 @@
 
 @media (min-width: $desktop) {
     .cuadro  {
-        height: 55vh;
+        height: 90vh;
     }
 }
 
-.carousel-item img {
-    height: 45vh;
-}
-
-@media (min-width: $mobile) {
-    .carousel-item img {
-        height: 50vh;
-    }
-}
-
-@media (min-width: $tablet) {
-    .carousel-item img {
-        height: 70vh;
-    }
-}
-
-@media (min-width: $desktop) {
-    .carousel-item img {
-        height: 80vh;
-    }
-
-    #carouselExampleIndicators {
-        width: 70%;
-        margin: 0 auto
-    }
-}
 
 .frase {
     color: $color-secundario;
@@ -82,6 +56,14 @@
     justify-content: center;
     align-items: center;
     margin: 0px;
+    opacity: .9;
+
+    transition: all 2s;
+
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-primario;
+    }
 }
 
 .navbar-toggler {
@@ -89,3 +71,78 @@
     color: $color-secundario;
 }
 
+.caja {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;  
+}
+
+
+.caja img {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.caja-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+
+}
+
+.card {
+    height:30vh 30vh;
+
+&:hover {
+    height: 40vh 40vh;
+    background-color: $color-primario;
+    color: $color-secundario;
+    transition: all 2s;
+}    
+}
+
+.textos {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    display:grid;
+    padding: 4vh;
+    text-align: center;
+}
+
+.estudiar-nosotros {
+    text-align: center;
+    margin: 70px;    
+}   
+
+
+@media (max-width: $mobile) {
+    .caja {width: 100%;
+    }
+}
+
+@media (min-width: tablet) {
+    .caja {
+        width: 80%;
+    }
+}
+
+@media (min-width: $desktop) {
+    .caja{
+        width: 50%;
+    }
+}
+
+.irArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+}

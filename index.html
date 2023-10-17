@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS BOOTSTRAP -->
+<!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
 <!-- ICONO BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+
 <!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/styles.css">
+
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- ETIQUETAS SEO -->
     <meta name="description" content="Bienvenido a nuestro sitio web. Acá podras aprender cursos con rapida salida laboral de la mano de iNumbers.">
     <meta name="keywords" content="Cursos, oficios, salida laboral, practicas, trabajo">
@@ -18,7 +23,7 @@
 </head>
 <body>
     
-    <header>
+  <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">iNumbers</a>
@@ -47,14 +52,12 @@
               </div>
             </div>
           </nav>
-    </header>
+  </header>
 
-       <section  class="frase">
-        <h2>
-            Conocé iNumbers | Creamos futuro a traves del conocimiento
-       </section>
 
-    <section class="cuadro">
+
+  <section data-aos="zoom-in">
+    <section class="cuadro" id="arriba">
         <section class="container">
             <h1>Think different. | Piensa diferente.</h1>
 
@@ -65,51 +68,69 @@
         </section>
 
             <img class="container" src="img/idea.png" alt="idea" class="imagen">
-        </section>
+    </section>
 
+  </section>   
+
+  <section data-aos="zoom-in">
+    <section  class="frase">
+      <h2>
+          Conocé iNumbers | Creamos futuro a traves del conocimiento
+  </section>
+  </section>
  
 
-    <section class="vis">
-      <div class="cajaGris">
-        <h3> <u>Visualiza este concepto.</u> </h3>
-         <p>Desde iNumbers buscamos que nunca pierdas ese deseo de curiosidad, de seguir buscando tu verdadero propósito. Y en el caso que lo tengas, a que mantengas ese pensamiento: "Stay hungry. Stay foolish"</p>            
-    </div>
-    </section>
+  <section data-aos="zoom-in">
 
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/1.jpeg" class="d-block w-100" alt="Albert Einstein">
+    <h2 class="estudiar-nosotros"> ¿Por qué estudiar con nosotros?</h2>
+
+    <div class="caja">
+      <div class="caja-cards">
+        
+        <div class="card">
+              <div class="textos">
+                <img src="/img/cards-avion.png" alt="Job Prep">
+                <h3>|Job Prep</h3>
+                <p> Te preparamos para ingresar al mundo laboral brindándote las herramientas necesarias para conseguir un trabajo.</p>
               </div>
-              <div class="carousel-item">
-                <img src="./img/2.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/3.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/4.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>  
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+  
+        <div class="card">
+          <div class="textos">
+            <img src="/img/card-gen.png" alt="Labs">
+            <h3>|Labs</h3>
+            <p> Construí en equipo proyectos del mundo real con metodologías y herramientas ágiles (scrum), bajo un aprendizaje colaborativo.</p>
           </div>
-    </section>
+        </div>
+  
+        <div class="card">
+          <div class="textos">
+            <img src="/img/cards-nota.png" alt="Bootcamp">
+            <h3>|Bootcamp</h3>
+            <p> Entrenamiento inqtensivo en el que vas a aprender las últimas tecnologías y lenguajes de programación.
+  
+            </p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="textos">
+            <img src="/img/cards-foco.png" alt="Job Prep">
+            <h3>|Job Prep</h3>
+            <p> Te preparamos para ingresar al mundo laboral brindándote las herramientas necesarias para conseguir un trabajo.</p>
+          </div>
+        </div>
+  
+      </div>
+  
+  
+    </div>
+  
+  </section>    
+ 
 
     <div class="irArriba">
-        <a href="#arriba">Ir arriba</a>
+        <a href="#arriba"><img src="/img/irarriba.png" alt=""></a>
     </div>
     
     <footer>
@@ -130,6 +151,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    
 </body>
 </html>

@@ -11,7 +11,6 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   color: #232323;
   background-color: #ffffff;
 }
@@ -25,6 +24,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 footer {
@@ -82,7 +82,7 @@ h1 {
   margin-top: 140px;
   margin-bottom: 140px;
   width: 91%;
-  height: 35px;
+  height: 30px;
   padding: 60px 50px;
   display: flex;
   align-items: center;
@@ -98,7 +98,6 @@ h1 {
 }
 
 .imagen {
-  text-align: cen;
   margin-left: 450px;
   margin-top: 10px;
   width: 350px;
@@ -109,37 +108,14 @@ h1 {
     height: 50vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 521px) {
   .cuadro {
     height: 70vh;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .cuadro {
-    height: 55vh;
-  }
-}
-.carousel-item img {
-  height: 45vh;
-}
-
-@media (min-width: 520px) {
-  .carousel-item img {
-    height: 50vh;
-  }
-}
-@media (min-width: 768px) {
-  .carousel-item img {
-    height: 70vh;
-  }
-}
-@media (min-width: 1200px) {
-  .carousel-item img {
-    height: 80vh;
-  }
-  #carouselExampleIndicators {
-    width: 70%;
-    margin: 0 auto;
+    height: 90vh;
   }
 }
 .frase {
@@ -154,6 +130,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  opacity: 0.9;
+  transition: all 2s;
+}
+.frase:hover {
+  background-color: #ffffff;
+  color: #232323;
 }
 
 .navbar-toggler {
@@ -161,17 +143,72 @@ h1 {
   color: #ffffff;
 }
 
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.caja {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto;
   gap: 20px;
-  background-color: #232323;
-  color: #ffffff;
 }
 
-.contenedor img {
-  width: 450px;
+.caja img {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
+
+.caja-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+}
+
+.card {
+  height: 30vh 30vh;
+}
+.card:hover {
+  height: 40vh 40vh;
+  background-color: #232323;
+  color: #ffffff;
+  transition: all 2s;
+}
+
+.textos {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  display: grid;
+  padding: 4vh;
+  text-align: center;
+}
+
+.estudiar-nosotros {
+  text-align: center;
+  margin: 70px;
+}
+
+@media (max-width: 520px) {
+  .caja {
+    width: 100%;
+  }
+}
+@media (min-width: tablet) {
+  .caja {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .caja {
+    width: 50%;
+  }
+}
+.irArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
 }
 
 .reverse {
@@ -208,13 +245,12 @@ h1 {
 .padre-cursos {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .banner {
-  background-image: url(/img/logo.png);
+  background-image: url(/img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -234,6 +270,69 @@ h1 {
 .parrafos {
   width: 85%;
   text-align: center;
+}
+
+.gradiente {
+  width: 200px;
+  height: 200px;
+}
+
+.gradiente-lineal {
+  background-image: linear-gradient(#232323, #ffffff);
+  margin-bottom: 40px;
+}
+
+.gradiente-radial {
+  background-image: radial-gradient(ellipse, #232323, #ffffff);
+}
+
+/* TRANSICIONES */
+/* se declara la transicion en el elemento. y luego en el hover se coloca el cambio que realiza */
+.transicion {
+  background-color: violet;
+  width: 200px;
+  height: 200px;
+  transition: height 3s, width 3s;
+}
+.transicion:hover {
+  height: 400px;
+  width: 400px;
+}
+
+h2 {
+  transition: step-start 2s;
+}
+h2:hover {
+  color: #ffffff;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.contenedor img {
+  width: 40%;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (min-width: 521px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

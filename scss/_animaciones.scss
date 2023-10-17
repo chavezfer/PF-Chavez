@@ -1,0 +1,35 @@
+.gradiente  {
+    width: 200px;
+    height: 200px;
+}
+
+.gradiente-lineal {
+    background-image: linear-gradient(#232323, #ffffff);
+    margin-bottom: 40px;
+}
+
+.gradiente-radial {
+    background-image: radial-gradient(ellipse, #232323, #ffffff);
+}
+
+/* TRANSICIONES */
+/* se declara la transicion en el elemento. y luego en el hover se coloca el cambio que realiza */
+.transicion {
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+
+    transition: height 3s, width 3s;
+
+    &:hover {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+h2 {transition:step-start 2s;
+&:hover {
+        color: #ffffff;
+    }
+}
+

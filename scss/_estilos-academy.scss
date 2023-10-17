@@ -1,15 +1,4 @@
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: $color-primario;
-    color: $color-secundario; 
-}
 
-.contenedor img {
-    width: 450px;
-}
 
 .reverse {
     flex-direction: row-reverse;
@@ -47,7 +36,6 @@
 .padre-cursos {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
